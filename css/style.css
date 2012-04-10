@@ -1,0 +1,370 @@
+/* HTML5 Boilerplate  */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; background:url(../img/bg.jpeg); }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 35em) {
+  
+
+}
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } 
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+/*Some sweet ass fonts*/
+/*Lobster from here: http://www.fontsquirrel.com/fonts/Lobster */
+@font-face {
+    font-family: 'Lobster13Regular';
+    src: url('fonts/Lobster_1.3-webfont.eot');
+    src: url('fonts/Lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lobster_1.3-webfont.woff') format('woff'),
+         url('fonts/Lobster_1.3-webfont.ttf') format('truetype'),
+         url('fonts/Lobster_1.3-webfont.svg#Lobster13Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Windsong from here: http://www.fontsquirrel.com/fonts/Windsong */
+@font-face {
+    font-family: 'WindsongRegular';
+    src: url('fonts/Windsong-webfont.eot');
+    src: url('fonts/Windsong-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Windsong-webfont.woff') format('woff'),
+         url('fonts/Windsong-webfont.ttf') format('truetype'),
+         url('fonts/Windsong-webfont.svg#WindsongRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*James' reign of CSS terror begins */
+
+#main {
+  margin:0 auto;
+  width:960px;
+  box-shadow: #000 0px 0px 30px;
+  margin-bottom: 20px;
+}
+
+header{
+  height:99px;
+  width:100%;
+  background:url(../img/header-bg.jpg);
+  box-shadow: #000 0px 0px 10px;
+  z-index:5px;
+}
+header> #inner {
+   margin: 0 auto;
+   width:960px;
+   position: relative;
+}
+header > #inner > .logo {
+  position: absolute;
+  left:330px;
+}
+header > #inner > .follow {
+  position: absolute;
+  top: 35px;
+  right:70px;
+}
+header > #inner > .tweet {
+  position: absolute;
+  top: 60px;
+  right:81px;
+}
+header > #inner > .like {
+  position: absolute;
+  top: 17px;
+  right:0px;
+}
+
+header > #inner > #instruct {
+  width: 300px;
+  height: 87px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  background: url(../img/instruct.png) no-repeat;
+}
+
+#welcome {
+  width: 480px;
+  height: 480px;
+  background:url(../img/welcome.png);
+  left:392px;
+  top:45px;
+  position: absolute;
+  z-index:999;
+}
+#welcome > .login_button {
+  position: absolute;
+  top:226px;
+  left:40px;
+}
+
+.gram{
+  display: inline-block;
+  position: relative;
+}
+
+.gram > .image{
+   width: 240px;
+   z-index: 1;
+}
+.gram > .dim{
+  z-index: 2;
+  position: absolute;
+  top:0px;
+  width: 240px;
+  height: 240px;
+  background-color:#000;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter:alpha(opacity=5);
+  visibility: hidden; /*This is toggled by the mouse over through JQuery*/
+}
+.gram > .meta{
+  z-index: 3;
+  top:0px;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  visibility: hidden; /*This is toggled by the mouse over through JQuery*/
+}
+.gram > .meta > .caption{
+  position: absolute;
+  top:5px;
+  left: 5px;
+  width:230px;
+  color: #fff;
+  text-align:center;
+  text-decoration: none;
+  font: 25px 'Lobster13Regular', Arial, sans-serif;
+  text-shadow: #000 0px 0px 5px;
+}
+.gram > .meta > .likes{
+  position: absolute;
+  top:100px;
+  left: 5px;
+  width:230px;
+  color: #fff;
+  font: 35px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+}
+.gram > .meta > .comments{
+  position: absolute;
+  top:135px;
+  left: 5px;
+  width:230px;
+  color: #fff;
+  font: 35px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+}
+.gram > .meta > .filter{
+  position: absolute;
+  top:165px;
+  left: 5px;
+  width:230px;
+  color: #fff;
+  font: 35px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+}
+.gram > .meta > .created{
+  position: absolute;
+  top:200px;
+  left: 5px;
+  width:230px;
+  color: #fff;
+  font: 35px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+}
+.gram > .meta > .created > a:visited, a:link, a:active{
+  color: #fff;
+  text-align:center;
+  text-decoration: none;
+  font: 35px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+}
+.gram > .meta > .created > a:hover{
+  color: #fff;
+  text-align:center;
+  text-decoration: underline;
+  font: 35px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+}
+#popular {
+  margin:0 auto;
+  width:960px;
+  box-shadow: #000 0px 0px 30px;
+  margin-bottom: 20px;
+  height:240px;
+  position: relative;
+}
+#popular > .bg{
+   width:960px;
+   height:240px;
+  background-color: #000;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+  filter:alpha(opacity=5);
+}
+#popular > .title{
+  color: #fff;
+  font: 45px 'Lobster13Regular', Arial, sans-serif;
+  text-shadow: #000 0px 0px 5px;
+  position: absolute;
+  top:10px;
+  left:10px;
+}
+#popular > .likes {
+   color: #fff;
+  font: 60px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+  top:50px;
+  left:20px;
+  position: absolute;
+}
+#popular > .comments {
+   color: #fff;
+  font: 60px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+  top:50px;
+  position: absolute;
+  left:320px;
+}
+#popular > .filter {
+   color: #fff;
+  font: 60px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+  top:110px;
+  position: absolute;
+  left:20px;
+}
+#popular > .date {
+   color: #fff;
+  font: 60px 'WindsongRegular', Arial, sans-serif;
+  text-shadow: #B5B547 0px 0px 5px;
+  top:110px;
+  position: absolute;
+  left:320px;
+}
+#popular > .tweet {
+   color: #fff;
+   font-size:25px;
+  text-shadow: #B5B547 0px 0px 5px;
+  top:200px;
+  position: absolute;
+  left:20px;
+}
+#popular > .gram {
+  top:0px;
+  position: absolute;
+  right:0px;
+}
+
+footer{
+  background:url(../img/carpet.jpg);
+  color: #fff;
+  height: 52px;
+  width:100%;
+  padding-top:10px;
+  text-align:center;
+  text-shadow: #B5B547 0px 0px 5px;
+  font: 15px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+}
+
+footer > a:visited, a:link, a:active, a:hover{
+  font: 15px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+  color: #fff;
+  text-shadow: #B5B547 0px 0px 5px;
+}

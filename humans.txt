@@ -1,0 +1,21 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Commander of Cool: James Whelton
+  Site: http://jameswhelton.com
+  Twitter: @JWhelton
+  Location: Dublin, Ireland
+
+/* THANKS */
+  All the dudes who made the libraries that make this possible!
+
+/* SITE */
+  Standards: HTML5, CSS3,
+  Components: Modernizr, jQuery
+  Server-side: PHP
+
+
+
+                      
