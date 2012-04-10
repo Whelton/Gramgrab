@@ -3,6 +3,9 @@
   //Create a client or view client details or register as a developer here: http://instagram.com/developer/manage/
   $client_details = array(
       'grant_type'      => 'authorization_code',
+      'client_id'       => 'client_id',
+      'client_secret'   => 'client_secret',
+      'redirect_uri'    => 'redirect_uri',
       'code'            => $_GET['code']
     );
 
@@ -23,6 +26,8 @@
 
     //and add access token to db for doing the grid
     //MySQL Details
+    mysql_connect("host","user","password");
+    @mysql_select_db("database") or die( "Unable to select database");
 
     //check if the user already exists
     

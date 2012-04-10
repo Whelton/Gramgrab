@@ -8,6 +8,8 @@
     }
     
     //MySQL Details
+    mysql_connect("host","user","password");
+    @mysql_select_db("database") or die( "Unable to select database");
 
     //check if the user already exists
     
