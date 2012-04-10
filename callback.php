@@ -45,7 +45,6 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>GramGrab - Instagram viewing and downloading tool</title>
   <title><? echo $user->user->username; ?>'s Grid</title>
   <meta name="description" content="Easily view and download all your Instgrams pics in a kick ass fashion!">
 
@@ -116,7 +115,6 @@
     </div>
   </header>
    <div id="share_grid">
-    Cool eh? Share your grid URL with others: http://gramgrab.com/grid.php?user=<?=$user->user->username;?> &bull; <a href="https://twitter.com/intent/tweet?related=jwhelton&text=<?=urlencode("Check out my grid of all my Instagram pics: http://gramgrab.com/grid.php?user=".$user->user->username." ! Get yours here http://gramgrab.com via @jwhelton");?>" style="color: #fff; text-decoration:underline;">Tweet your grid URL!</a>
     Cool eh? Share your grid URL with others: http://gramgrab.com/<?=$user->user->username;?> &bull; <a href="https://twitter.com/intent/tweet?related=jwhelton&text=<?=urlencode("Check out my grid of all my Instagram pics: http://gramgrab.com/grid.php?user=".$user->user->username." ! Get yours here http://gramgrab.com via @jwhelton");?>" style="color: #fff; text-decoration:underline;">Tweet your grid URL!</a>
   </div>
   <div id="main">
