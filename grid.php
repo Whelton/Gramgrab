@@ -8,8 +8,6 @@
     }
     
     //MySQL Details
-    mysql_connect("host","user","password");
-    @mysql_select_db("database") or die( "Unable to select database");
 
     //check if the user already exists
     
@@ -33,6 +31,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>GramGrab - Instagram viewing and downloading tool</title>
+  <title><?=$username; ?>'s Grid</title>
   <meta name="description" content="Easily view and download all your Instgrams pics in a kick ass fashion!">
 
   <meta name="viewport" content="width=device-width">

@@ -38,7 +38,6 @@
   </header>
   <div id="main">
     <div id="welcome">
-      <div class="login_button"><a href="https://instagram.com/oauth/authorize/?client_id=client_id&redirect_uri=redirect_uri&response_type=code"><img src="img/login.png" /></a></div>
     </div>
     <div class="gram">
                     <img src="http://distilleryimage0.instagram.com/21b528a482a611e18bb812313804a181_6.jpg" class="image" />
