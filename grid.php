@@ -1,40 +1,27 @@
 <?
-  //API Client details
-  //Create a client or view client details or register as a developer here: http://instagram.com/developer/manage/
-  $client_details = array(
-      'grant_type'      => 'authorization_code',
-      'client_id'       => 'client_id',
-      'client_secret'   => 'client_secret',
-      'redirect_uri'    => 'redirect_uri',
-      'code'            => $_GET['code']
-    );
-
-
-  //request access token via Curl
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, "https://api.instagram.com/oauth/access_token");
-    curl_setopt($ch, CURLOPT_POST, count($client_details));
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($client_details));
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept: application/json'));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  
+    //grab the username of the requested username
+    $username =$_GET['user'];
+    if(!$username || $username == ""){
+      echo "Need user parameter in url eg http://gramgrab.com/grid.php?user=jwhelton";
+      exit();
+    }
     
-    $response = curl_exec($ch);
-    curl_close($ch);
-
-    //create user object
-    $user = json_decode($response);
-
-    //and add access token to db for doing the grid
     //MySQL Details
     mysql_connect("host","user","password");
     @mysql_select_db("database") or die( "Unable to select database");
 
     //check if the user already exists
     
-    if(mysql_num_rows(mysql_query("SELECT * FROM  `gramgrab` WHERE `username` = '".$user->user->username."'")) == 0){
-      mysql_query("INSERT INTO `gramgrab` (`id`, `username`, `user_id`, `access_token`, `time`) VALUES (NULL, '".$user->user->username."', '".$user->user->id."', '".$user->access_token."', NOW());");
+    if(mysql_num_rows(mysql_query("SELECT * FROM  `gramgrab` WHERE `username` = '".mysql_real_escape_string($username)."'")) == 0){
+      echo "User not in db, please goto http://gramgrab.com and login with Instagram so we can have your access_token";
+      exit();
     }
+
+    $user = mysql_fetch_array(mysql_query("SELECT * FROM  `gramgrab` WHERE `username` = '".mysql_real_escape_string($username)."'"));
     mysql_close();
+
+
 ?>
 
 <!doctype html>
@@ -89,9 +76,8 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <div class="loading-dim"></div>
   <div id="loading">
-    <img src="<?=str_replace("\\", "", $user->user->profile_picture);?>" class="loader_pic" />
-    <br />Hold on <?=$user->user->full_name;?>,
-    <br />I'm loading your Instagrams
+    <br />Hold on, loading 
+    <br /><?=$user['username'];?>'s Instagrams
     <br /><img src="img/loader.gif" />
   </div>
 
@@ -114,14 +100,12 @@
       </div>
     </div>
   </header>
-   <div id="share_grid">
-    Cool eh? Share your grid URL with others: http://gramgrab.com/grid.php?user=<?=$user->user->username;?> &bull; <a href="https://twitter.com/intent/tweet?related=jwhelton&text=<?=urlencode("Check out my grid of all my Instagram pics: http://gramgrab.com/grid.php?user=".$user->user->username." ! Get yours here http://gramgrab.com via @jwhelton");?>" style="color: #fff; text-decoration:underline;">Tweet your grid URL!</a>
-  </div>
+  <div id="grid_header">Grid of @<?=$user['username'];?> <a href="http://gramgrab.com" style="color:#fff; font-size: 30px; text-decoration:underline;">Get yours here!</a></div>
   <div id="main">
     
     <?php
         //Now rock and roll
-        $feed = json_decode(file_get_contents("https://api.instagram.com/v1/users/".$user->user->id."/media/recent/?access_token=".$user->access_token."&min_timestamp=1286323200"));
+        $feed = json_decode(file_get_contents("https://api.instagram.com/v1/users/".$user['user_id']."/media/recent/?access_token=".$user['access_token']."&min_timestamp=1286323200"));
 
         $completed = false;
         $most_popular = false;
@@ -161,7 +145,7 @@
 
    <div id="popular">
     <div class="bg"></div>
-    <div class="title">@<?=$user->user->username;?>'s Most Popular Instagram</div>
+    <div class="title">@<?=$user['username'];?>'s Most Popular Instagram</div>
     <div class="likes">Likes: <?=$most_popular->likes->count;?></div>
     <div class="comments">Comments: <?=$most_popular->comments->count;?></div>
     <div class="filter">Filter: <?=$most_popular->filter;?></div>
