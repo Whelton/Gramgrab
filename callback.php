@@ -146,7 +146,7 @@
 
    <div id="popular">
     <div class="bg"></div>
-    <div class="title">@JWhelton's Most Popular Instagram</div>
+    <div class="title">@<?=$user->user->username;?>'s Most Popular Instagram</div>
     <div class="likes">Likes: <?=$most_popular->likes->count;?></div>
     <div class="comments">Comments: <?=$most_popular->comments->count;?></div>
     <div class="filter">Filter: <?=$most_popular->filter;?></div>
