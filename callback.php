@@ -182,7 +182,11 @@
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
   <script type="text/javascript">
-    window.onload = function() { $("#loading").fadeOut();  $(".loading-dim").fadeOut();} ;</script>
+    window.onload = function() { $("#loading").fadeOut();  $(".loading-dim").fadeOut();} ;
+    $(".gram").click(function(){
+      window.open('get.php?url='+$(this).children('.url').val());
+    });
+  </script>
   <script>
     var _gaq=[['_setAccount','UA-30729619-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
