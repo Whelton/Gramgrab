@@ -1,2 +1,4 @@
 RewriteEngine On
+#1and1 hosting required this
+RewriteBase /
 RewriteRule ^([a-zA-Z0-9]+)$ grid.php?user=$1
