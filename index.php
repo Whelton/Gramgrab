@@ -28,11 +28,11 @@
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
       <div class="tweet">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://grabgram.com" data-text="Awesome Instagram pic viewing and saving tool" data-via="jwhelton">Tweet</a>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://gramgrab.com" data-text="Awesome Instagram pic viewing and saving tool" data-via="jwhelton">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
       <div class="like">
-        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgrabgram.com&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&amp;appId=162166313824216" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:90px;" allowTransparency="true"></iframe>
+        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgramgrab.com&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&amp;appId=162166313824216" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:90px;" allowTransparency="true"></iframe>
       </div>
     </div>
   </header>
@@ -228,7 +228,7 @@
     <div class="filter">Filter: Lo-Fi</div>
     <div class="date">Taken: 1/1/11 11:11</div>
     <div class="gram"><img src="http://distilleryimage0.s3.amazonaws.com/ea886f407f2f11e18cf91231380fd29b_6.jpg" class="image" /></div>
-    <div class="tweet"><a href="https://twitter.com/intent/tweet?related=jwhelton&text=My%20most%20popular%20Instagram%3A%20http%3A%2F%2Finstagr.am%2Fp%2FJCsxdpC-nI%2F%20with%20100%20likes%2C%20200%20comments.%20Find%20yours%20here%20http%3A%2F%2Fgrabgram.com "style="color: #fff; font-size:25px;">Click here to tweet this with link to the Instagram...</a></div>
+    <div class="tweet"><a href="https://twitter.com/intent/tweet?related=jwhelton&text=My%20most%20popular%20Instagram%3A%20http%3A%2F%2Finstagr.am%2Fp%2FJCsxdpC-nI%2F%20with%20100%20likes%2C%20200%20comments.%20Find%20yours%20here%20http%3A%2F%2Fgramgrab.com "style="color: #fff; font-size:25px;">Click here to tweet this with link to the Instagram...</a></div>
   </div>
   <footer>
     <div class="inner">
