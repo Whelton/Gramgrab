@@ -41,184 +41,29 @@
       <div class="login_button"><a href="https://instagram.com/oauth/authorize/?client_id=client_id&redirect_uri=redirect_uri&response_type=code"><img src="img/login.png" /></a></div>
     </div>
     <div class="gram">
-                    <img src="http://distilleryimage0.instagram.com/21b528a482a611e18bb812313804a181_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage0.instagram.com/21b528a482a611e18bb812313804a181_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">Hackity hack</div>
-                      <div class="likes">Likes: 2</div>
-                      <div class="comments">Comments: 0</div>
-                      <div class="filter">Filter: X-Pro II</div>
-                      <div class="created"><a href="http://instagr.am/p/JOCwrhC-tk/" TARGET="_blank">10/4/12 43:01</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage7.instagram.com/b0de6af281d611e18bb812313804a181_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage7.instagram.com/b0de6af281d611e18bb812313804a181_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">No Caption</div>
-                      <div class="likes">Likes: 2</div>
-                      <div class="comments">Comments: 2</div>
-                      <div class="filter">Filter: Lo-fi</div>
-                      <div class="created"><a href="http://instagr.am/p/JLY0zui-kP/" TARGET="_blank">9/4/12 58:00</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage8.instagram.com/e0cbe95481ba11e180c9123138016265_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage8.instagram.com/e0cbe95481ba11e180c9123138016265_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">No Caption</div>
-                      <div class="likes">Likes: 1</div>
-                      <div class="comments">Comments: 0</div>
-                      <div class="filter">Filter: Valencia</div>
-                      <div class="created"><a href="http://instagr.am/p/JLCCnji-nk/" TARGET="_blank">8/4/12 39:21</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage4.instagram.com/a50df368810511e181bd12313817987b_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage4.instagram.com/a50df368810511e181bd12313817987b_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">No Caption</div>
-                      <div class="likes">Likes: 4</div>
-                      <div class="comments">Comments: 1</div>
-                      <div class="filter">Filter: Earlybird</div>
-                      <div class="created"><a href="http://instagr.am/p/JItkxQi-sE/" TARGET="_blank">8/4/12 01:00</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage7.instagram.com/439188c280d611e1989612313815112c_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage7.instagram.com/439188c280d611e1989612313815112c_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">My friends rock</div>
-                      <div class="likes">Likes: 2</div>
-                      <div class="comments">Comments: 0</div>
-                      <div class="filter">Filter: Rise</div>
-                      <div class="created"><a href="http://instagr.am/p/JIGwpqi-qP/" TARGET="_blank">7/4/12 22:18</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage6.instagram.com/8e7aae6880b811e19e4a12313813ffc0_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage6.instagram.com/8e7aae6880b811e19e4a12313813ffc0_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">No Caption</div>
-                      <div class="likes">Likes: 3</div>
-                      <div class="comments">Comments: 1</div>
-                      <div class="filter">Filter: Rise</div>
-                      <div class="created"><a href="http://instagr.am/p/JHubIPC-gm/" TARGET="_blank">7/4/12 49:14</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage1.instagram.com/349bf23c80b611e1abb01231381b65e3_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage1.instagram.com/349bf23c80b611e1abb01231381b65e3_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">Found one of them "Sea Computers"</div>
-                      <div class="likes">Likes: 5</div>
-                      <div class="comments">Comments: 0</div>
-                      <div class="filter">Filter: Lo-fi</div>
-                      <div class="created"><a href="http://instagr.am/p/JHsf3eC-gF/" TARGET="_blank">7/4/12 33:14</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage4.s3.amazonaws.com/8e29b49c802f11e1989612313815112c_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage4.s3.amazonaws.com/8e29b49c802f11e1989612313815112c_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">Hey look it's @RDbeccaX</div>
-                      <div class="likes">Likes: 1</div>
-                      <div class="comments">Comments: 1</div>
-                      <div class="filter">Filter: Sutro</div>
-                      <div class="created"><a href="http://instagr.am/p/JF-MUYC-tY/" TARGET="_blank">6/4/12 29:22</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage0.s3.amazonaws.com/ea886f407f2f11e18cf91231380fd29b_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage0.s3.amazonaws.com/ea886f407f2f11e18cf91231380fd29b_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">I really gotta stop photoshop the results of conversations with my friends</div>
-                      <div class="likes">Likes: 12</div>
-                      <div class="comments">Comments: 2</div>
-                      <div class="filter">Filter: Lo-fi</div>
-                      <div class="created"><a href="http://instagr.am/p/JCsxdpC-nI/" TARGET="_blank">5/4/12 59:15</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage0.s3.amazonaws.com/7db3ecfc7e7e11e1ab011231381052c0_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage0.s3.amazonaws.com/7db3ecfc7e7e11e1ab011231381052c0_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">Leaving Arizona</div>
-                      <div class="likes">Likes: 3</div>
-                      <div class="comments">Comments: 0</div>
-                      <div class="filter">Filter: X-Pro II</div>
-                      <div class="created"><a href="http://instagr.am/p/JAbbRti-uw/" TARGET="_blank">4/4/12 49:18</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage10.s3.amazonaws.com/9a8fec2a7d5911e1af7612313813f8e8_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage10.s3.amazonaws.com/9a8fec2a7d5911e1af7612313813f8e8_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">Here's @paul_irish killing it on the mechanical bull</div>
-                      <div class="likes">Likes: 5</div>
-                      <div class="comments">Comments: 0</div>
-                      <div class="filter">Filter: Lo-fi</div>
-                      <div class="created"><a href="http://instagr.am/p/I8rfjGi-o2/" TARGET="_blank">3/4/12 52:07</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage6.s3.amazonaws.com/4c0aab507c9e11e1af7612313813f8e8_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage6.s3.amazonaws.com/4c0aab507c9e11e1af7612313813f8e8_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">Under the starry sky</div>
-                      <div class="likes">Likes: 1</div>
-                      <div class="comments">Comments: 0</div>
-                      <div class="filter">Filter: Earlybird</div>
-                      <div class="created"><a href="http://instagr.am/p/I6SDSCi-vy/" TARGET="_blank">2/4/12 31:09</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage5.s3.amazonaws.com/7dee082a7be911e1a87612313804ec91_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage5.s3.amazonaws.com/7dee082a7be911e1a87612313804ec91_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">Onwards</div>
-                      <div class="likes">Likes: 7</div>
-                      <div class="comments">Comments: 1</div>
-                      <div class="filter">Filter: X-Pro II</div>
-                      <div class="created"><a href="http://instagr.am/p/I3974uC-vR/" TARGET="_blank">1/4/12 57:11</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage1.s3.amazonaws.com/cb4825d67a9c11e181bd12313817987b_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage1.s3.amazonaws.com/cb4825d67a9c11e181bd12313817987b_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">No Caption</div>
-                      <div class="likes">Likes: 1</div>
-                      <div class="comments">Comments: 2</div>
-                      <div class="filter">Filter: Earlybird</div>
-                      <div class="created"><a href="http://instagr.am/p/IztY7_C-ox/" TARGET="_blank">30/3/12 16:20</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage2.s3.amazonaws.com/d9ee2e367a6b11e1abb01231381b65e3_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage2.s3.amazonaws.com/d9ee2e367a6b11e1abb01231381b65e3_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">At CorkBIC's entrepreneur experience event in Kinsale</div>
-                      <div class="likes">Likes: 1</div>
-                      <div class="comments">Comments: 0</div>
-                      <div class="filter">Filter: Lo-fi</div>
-                      <div class="created"><a href="http://instagr.am/p/IzFS7Ui-hq/" TARGET="_blank">30/3/12 25:14</a></div>
-                    </div>
-                  </div><div class="gram">
-                    <img src="http://distilleryimage4.s3.amazonaws.com/2dfc58567a0611e19e4a12313813ffc0_6.jpg" class="image" />
-                    <input type="hidden" value="http://distilleryimage4.s3.amazonaws.com/2dfc58567a0611e19e4a12313813ffc0_7.jpg" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">The most freakin terrifying building I pass every night after work</div>
-                      <div class="likes">Likes: 11</div>
-                      <div class="comments">Comments: 2</div>
-                      <div class="filter">Filter: Sutro</div>
-                      <div class="created"><a href="http://instagr.am/p/IxyAZ1i-k4/" TARGET="_blank">30/3/12 17:02</a></div>
-                    </div>
-                  </div> 
-
-                </div>
+     <?php
+			mysql_connect("host","user","password");
+	        @mysql_select_db("database") or die( "Unable to select database");
+	     	     
+	         $user = mysql_fetch_assoc(mysql_query("SELECT * FROM  `gramgrab` LIMIT 1"));
+	         mysql_close();
+             //Grab Some random Instagrams
+             $feed = json_decode(file_get_contents("https://api.instagram.com/v1/media/popular?access_token=".$user['access_token']."&min_timestamp=1286323200&count=16"));
+             	foreach ($feed->data as $gram) {
+             		echo '<div class="gram">
+                         <img src="'.$gram->images->low_resolution->url.'" class="image" />
+                         <input type="hidden" value="'.$gram->images->standard_resolution->url.'" class="url"/>
+                         <div class="dim"></div>
+                         <div class="meta">
+                           <div class="caption">'.(isset($gram->caption->text)?((strlen($gram->caption->text) > 80)?substr($gram->caption->text, 0, 77)."...":$gram->caption->text):'No Caption').'</div>
+                           <div class="likes">Likes: '.$gram->likes->count.'</div>
+                           <div class="comments">Comments: '.$gram->comments->count.'</div>
+                           <div class="filter">Filter: '.$gram->filter.'</div>
+                           <div class="created"><a href="'.$gram->link.'" TARGET="_blank">'.date("j/n/y H:i",$gram->created_time).'</a></div>
+                         </div>
+                       </div>';
+               	}
+         ?>
 
   <div id="popular">
     <div class="bg"></div>
