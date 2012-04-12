@@ -126,8 +126,8 @@
   </header>
    <div id="share_grid">
    <? if(isset($user->access_token)){ ?>
-    Cool eh? Share your grid URL with others: http://gramgrab.com/<?=$user->user->username;?> &bull; <a href="https://twitter.com/intent/tweet?related=jwhelton&text=<?=urlencode("Check out my grid of all my Instagram pics: http://gramgrab.com/grid.php?user=".$user->user->username." ! Get yours here http://gramgrab.com via @jwhelton");?>" style="color: #fff; text-decoration:underline;">Tweet your grid URL!</a> &bull; <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fgramgrab.com%2Fshaps89&src=sp&t=<?= urlencode("GramGrab.com - ".$user->user->username."'s Grid"); ?>" style="color: #fff; text-decoration: underline;" target="_blank">Or post it to Facebook</a>
-    <? }else {
+     Cool eh? Share your grid URL with others: http://gramgrab.com/<?=$user->user->username;?> &bull; <a href="https://twitter.com/intent/tweet?related=jwhelton&text=<?=urlencode("Check out my grid of all my Instagram pics: http://gramgrab.com/".$user->user->username." ! Get yours here http://gramgrab.com via @jwhelton");?>" style="color: #fff; text-decoration:underline;">Tweet your grid URL!</a> &bull; <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fgramgrab.com%2F<?=$user->user->username;?>&src=sp&t=<?= urlencode("GramGrab.com - ".$user->user->username."'s Grid"); ?>" style="color: #fff; text-decoration: underline;" target="_blank">Or post it to Facebook</a>
+   <? }else {
     	?>
     	You have to &bull; Login &bull; to Instagram to see your photos. Go back <a href="index.php" style="color: #fff; text-decoration: underline;">Home</a> and try again!
     	<?
