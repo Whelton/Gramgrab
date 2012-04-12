@@ -45,8 +45,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title><? echo $user->user->username; ?>'s Grid</title>
+  <? if(isset($user->access_token)){ ?>
+	  <title><? echo $user->user->username; ?>'s Grid</title>
+  <? }else {
+  ?>
+  	  <title>GramGrab - Instagram viewing and downloading tool</title>
+  <?
+  	 } ?>
   <meta name="description" content="Easily view and download all your Instgrams pics in a kick ass fashion!">
+  
+  <meta property="og:description" content="<?= $user->user->full_name; ?> Choose Gramgrab to view and download all his Instagram pics in a kick ass Fashion!" />
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
@@ -87,6 +95,7 @@
 </head>
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <? if(isset($user->access_token)){ ?>
   <div class="loading-dim"></div>
   <div id="loading">
     <img src="<?=str_replace("\\", "", $user->user->profile_picture);?>" class="loader_pic" />
@@ -94,6 +103,7 @@
     <br />I'm loading your Instagrams
     <br /><img src="img/loader.gif" />
   </div>
+  <? } ?>
 
   <a href="http://github.com/jwhelton/gramgrab"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
   
@@ -115,47 +125,53 @@
     </div>
   </header>
    <div id="share_grid">
-    Cool eh? Share your grid URL with others: http://gramgrab.com/<?=$user->user->username;?> &bull; <a href="https://twitter.com/intent/tweet?related=jwhelton&text=<?=urlencode("Check out my grid of all my Instagram pics: http://gramgrab.com/grid.php?user=".$user->user->username." ! Get yours here http://gramgrab.com via @jwhelton");?>" style="color: #fff; text-decoration:underline;">Tweet your grid URL!</a>
+   <? if(isset($user->access_token)){ ?>
+    Cool eh? Share your grid URL with others: http://gramgrab.com/<?=$user->user->username;?> &bull; <a href="https://twitter.com/intent/tweet?related=jwhelton&text=<?=urlencode("Check out my grid of all my Instagram pics: http://gramgrab.com/grid.php?user=".$user->user->username." ! Get yours here http://gramgrab.com via @jwhelton");?>" style="color: #fff; text-decoration:underline;">Tweet your grid URL!</a> &bull; <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fgramgrab.com%2Fshaps89&src=sp&t=<?= urlencode("GramGrab.com - ".$user->user->username."'s Grid"); ?>" style="color: #fff; text-decoration: underline;" target="_blank">Or post it to Facebook</a>
+    <? }else {
+    	?>
+    	You have to &bull; Login &bull; to Instagram to see your photos. Go back <a href="index.php" style="color: #fff; text-decoration: underline;">Home</a> and try again!
+    	<?
+} ?>
   </div>
   <div id="main">
     
     <?php
         //Now rock and roll
-        $feed = json_decode(file_get_contents("https://api.instagram.com/v1/users/".$user->user->id."/media/recent/?access_token=".$user->access_token."&min_timestamp=1286323200"));
-
-        $completed = false;
-        $most_popular = false;
-
-        while(!$completed){
-        	foreach ($feed->data as $gram) {
-
-        		echo '<div class="gram">
-                    <img src="'.$gram->images->low_resolution->url.'" class="image" />
-                    <input type="hidden" value="'.$gram->images->standard_resolution->url.'" class="url"/>
-                    <div class="dim"></div>
-                    <div class="meta">
-                      <div class="caption">'.(isset($gram->caption->text)?((strlen($gram->caption->text) > 80)?substr($gram->caption->text, 0, 77)."...":$gram->caption->text):'No Caption').'</div>
-                      <div class="likes">Likes: '.$gram->likes->count.'</div>
-                      <div class="comments">Comments: '.$gram->comments->count.'</div>
-                      <div class="filter">Filter: '.$gram->filter.'</div>
-                      <div class="created"><a href="'.$gram->link.'" TARGET="_blank">'.date("j/n/y H:i",$gram->created_time).'</a></div>
-                    </div>
-                  </div>';
-            if(!$most_popular){
-              $most_popular = $gram;
-            }
-            elseif($gram->likes->count + $gram->comments->count > $most_popular->likes->count + $most_popular->comments->count){  
-              $most_popular = $gram;
-            }
-        	}
-        	if(isset($feed->pagination->next_url)){
-        		$feed = json_decode(file_get_contents($feed->pagination->next_url));
-        	}
-        	else {
-        		$completed = true;
-        	}
-        }
-
+        if(isset($user->access_token)){
+	        $feed = json_decode(file_get_contents("https://api.instagram.com/v1/users/".$user->user->id."/media/recent/?access_token=".$user->access_token."&min_timestamp=1286323200"));
+	
+	        $completed = false;
+	        $most_popular = false;
+	
+	        while(!$completed){
+	        	foreach ($feed->data as $gram) {
+	
+	        		echo '<div class="gram">
+	                    <img src="'.$gram->images->low_resolution->url.'" class="image" />
+	                    <input type="hidden" value="'.$gram->images->standard_resolution->url.'" class="url"/>
+	                    <div class="dim"></div>
+	                    <div class="meta">
+	                      <div class="caption">'.(isset($gram->caption->text)?((strlen($gram->caption->text) > 80)?substr($gram->caption->text, 0, 77)."...":$gram->caption->text):'No Caption').'</div>
+	                      <div class="likes">Likes: '.$gram->likes->count.'</div>
+	                      <div class="comments">Comments: '.$gram->comments->count.'</div>
+	                      <div class="filter">Filter: '.$gram->filter.'</div>
+	                      <div class="created"><a href="'.$gram->link.'" TARGET="_blank">'.date("j/n/y H:i",$gram->created_time).'</a></div>
+	                    </div>
+	                  </div>';
+	            if(!$most_popular){
+	              $most_popular = $gram;
+	            }
+	            elseif($gram->likes->count + $gram->comments->count > $most_popular->likes->count + $most_popular->comments->count){  
+	              $most_popular = $gram;
+	            }
+	        	}
+	        	if(isset($feed->pagination->next_url)){
+	        		$feed = json_decode(file_get_contents($feed->pagination->next_url));
+	        	}
+	        	else {
+	        		$completed = true;
+	        	}
+	        }
     ?>
   </div>
 
@@ -169,14 +185,13 @@
     <div class="gram"><img src="<?=$most_popular->images->low_resolution->url;?>" class="image" /></div>
     <div class="tweet"><a href="https://twitter.com/intent/tweet?related=jwhelton&text=<?=urlencode("My most popular Instagram: ".$most_popular->link." with ".$most_popular->likes->count." likes, ".$most_popular->comments->count." comments. Find yours here http://gramgrab.com");?>" style="color: #fff; font-size:25px;">Click here to tweet this with link to the Instagram...</a></div>
   </div>
-
   <footer>
     <div class="inner">
       Hacked togther in a couple of hours by <a href="http://twitter.com/jwhelton" style="color: #fff; text-decoration:underline;">@JWhelton</a> while he had the flu. <br />This site isn't gonna exit for $1 Billion, but please buy me some chicken soup: <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=GAMRXNR9T2PJG&lc=IE&item_name=James%20Whelton%20Chicken%20Soup%20Fund&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" style="color: #fff; text-decoration:underline;">Donate on PayPal</a>
     </div>
   </footer>
 
-
+  <? } ?>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
